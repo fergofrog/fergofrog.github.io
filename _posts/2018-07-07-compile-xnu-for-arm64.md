@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Compiling XNU for ARM64"
+title:  "Compiling XNU 4570.41.2 for ARM64"
 date:   2018-07-07
 categories: xnu arm64
 ---
@@ -27,7 +27,8 @@ with the following ammendments:
   3. When building: the SDK is "`iphoneos`", the ARCH is "`arm64`", and XNU's build also needs `BUILD_WERROR=0`
 
 # The Details
-This process worked for me with a clean install of macOS High Sierra (10.13.5) and XCode 9.4, your mileage may vary.
+This process worked for me compiling XNU 4570.41.2 with a clean install of macOS High Sierra (10.13.5) and XCode 9.4, 
+however, your mileage may vary.
 
 ## CTF Tools
 The CTF tools (`ctfconvert`, `ctfdump` and `ctfmerge`) are executed as part of XNU's build and are expected to be in 
