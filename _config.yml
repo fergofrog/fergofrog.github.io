@@ -1,9 +1,10 @@
 # Site settings
 title: fergofrog's blog
+author: fergofrog
 description: >-
-    fergofrog's blog
+    fergofrog's blog about software and other stuff.
 baseurl: ""
-url: "https://fergofrog.github.io"
+url: "https://blog.fergofrog.com"
 twitter_username: fergofrog
 github_username:  fergofrog
 
