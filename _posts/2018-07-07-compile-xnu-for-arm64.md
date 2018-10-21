@@ -86,7 +86,7 @@ directory to the SDK's `/System/Library/Frameworks/Kernel.framework/Versions/A/H
 libfirehose.
 
 ```bash
-git clone TODO
+git clone https://github.com/fergofrog/xnu.git
 cd xnu
 make LOGCOLORS=y SDKROOT=iphoneos ARCH_CONFIGS=ARM64 KERNEL_CONFIGS=RELEASE installhdrs
 sudo ditto $PWD/BUILD/dst $(xcrun -sdk iphoneos -show-sdk-path)
