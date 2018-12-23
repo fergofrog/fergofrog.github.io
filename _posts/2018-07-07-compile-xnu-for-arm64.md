@@ -17,7 +17,7 @@ many other reasons. For me, a clean compile means I can generate a clean `compil
 # tl;dr
 The long and short of this process is, follow the steps from [this blog](https://kernelshaman.blogspot.com/2018/01/building-xnu-for-macos-high-sierra-1013.html),
 with the following ammendments:
-  1. Use my repository for [xnu](https://github.com/fergofrog/xnu) - it contains modifications to the xnu source 
+  1. Use my repository for [xnu](https://github.com/fergofrog/xnu/tree/xnu-4570.41.2) - it contains modifications to the xnu source 
      necessary for building 
      * _Note_: if you would rather build from Apple's source, check the [diff](https://github.com/fergofrog/xnu/commit/3f9807a1601c982580b77859e0aae6a915252c05)
        from my repo for changes I made
@@ -86,7 +86,7 @@ directory to the SDK's `/System/Library/Frameworks/Kernel.framework/Versions/A/H
 libfirehose.
 
 ```bash
-git clone https://github.com/fergofrog/xnu.git
+git clone -b xnu-4570.41.2 https://github.com/fergofrog/xnu.git
 cd xnu
 make LOGCOLORS=y SDKROOT=iphoneos ARCH_CONFIGS=ARM64 KERNEL_CONFIGS=RELEASE installhdrs
 sudo ditto $PWD/BUILD/dst $(xcrun -sdk iphoneos -show-sdk-path)
